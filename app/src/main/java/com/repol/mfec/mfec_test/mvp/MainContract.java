@@ -20,6 +20,8 @@ public interface MainContract {
         void onUnfollowUser(int position);
 
         void openProfilePage(int position, GitHubUser gitHubUser);
+
+        void onError();
     }
 
     interface Presenter {

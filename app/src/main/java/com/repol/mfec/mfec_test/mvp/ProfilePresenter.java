@@ -39,7 +39,7 @@ public class ProfilePresenter implements ProfileContract.Presenter {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        e.printStackTrace();
+                        view.onError();
                     }
 
                     @Override
@@ -62,7 +62,7 @@ public class ProfilePresenter implements ProfileContract.Presenter {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        e.printStackTrace();
+                        view.onError();
                     }
 
                     @Override
@@ -85,7 +85,7 @@ public class ProfilePresenter implements ProfileContract.Presenter {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        e.printStackTrace();
+                        view.onError();
                     }
 
                     @Override

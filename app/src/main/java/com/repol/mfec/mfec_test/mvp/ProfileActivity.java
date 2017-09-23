@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -109,6 +110,11 @@ public class ProfileActivity extends AppCompatActivity implements ProfileContrac
     public void onUnfollowUser() {
         gitHubUser.setFollowStatus(1);
         setProfile();
+    }
+
+    @Override
+    public void onError() {
+        Toast.makeText(ProfileActivity.this, "Operation cannot proceed.", Toast.LENGTH_SHORT);
     }
 
     @Override

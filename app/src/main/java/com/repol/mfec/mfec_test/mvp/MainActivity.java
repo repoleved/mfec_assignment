@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.repol.mfec.mfec_test.R;
 import com.repol.mfec.mfec_test.adapter.GitHubUsersAdapter;
@@ -168,6 +169,11 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         intent.putExtra(ARGS_POSITION, position);
         intent.putExtra(ARGS_USER_OBJECT, gitHubUser);
         startActivityForResult(intent, REQUEST_PROFILE_ACTIVITY);
+    }
+
+    @Override
+    public void onError() {
+        Toast.makeText(MainActivity.this, "Operation cannot proceed.", Toast.LENGTH_SHORT);
     }
 
     @Override

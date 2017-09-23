@@ -13,6 +13,8 @@ public class ProfileContract {
         void onFollowUser();
 
         void onUnfollowUser();
+
+        void onError();
     }
 
     interface Presenter {

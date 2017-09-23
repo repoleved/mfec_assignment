@@ -43,7 +43,7 @@ public class MainPresenter implements MainContract.Presenter {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        e.printStackTrace();
+                        mainView.onError();
                     }
 
                     @Override
@@ -74,7 +74,7 @@ public class MainPresenter implements MainContract.Presenter {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        e.printStackTrace();
+                        mainView.onError();
                     }
 
                     @Override
@@ -97,7 +97,7 @@ public class MainPresenter implements MainContract.Presenter {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        e.printStackTrace();
+                        mainView.onError();
                     }
 
                     @Override
@@ -120,7 +120,7 @@ public class MainPresenter implements MainContract.Presenter {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        e.printStackTrace();
+                        mainView.onError();
                     }
 
                     @Override
