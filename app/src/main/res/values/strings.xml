@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">mfec_test</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="main_title">Github User</string>
+    <string name="profile_url">Url:</string>
+    <string name="profile_location">Location:</string>
+    <string name="profile_bio">Bio:</string>
+    <string name="profile_follower">Follower</string>
+    <string name="profile_following">Following</string>
+</resources>
