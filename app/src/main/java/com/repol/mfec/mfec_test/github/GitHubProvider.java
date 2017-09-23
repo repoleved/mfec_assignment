@@ -32,7 +32,7 @@ public class GitHubProvider {
                     final Request original = chain.request();
                     final HttpUrl originalHttpUrl = original.url();
                     final HttpUrl url = originalHttpUrl.newBuilder()
-                            .addQueryParameter("access_token", "7623f6604d5ba7cc64f58bdcec4c66ca0cc97b19")
+                            .addQueryParameter("access_token", "29ca986208dd8e4a5f17f1f1c4b33207f4874c4c")
                             .build();
 
                     final Request.Builder requestBuilder = original.newBuilder()
